@@ -1,0 +1,65 @@
+body {
+    background-color: #b3d9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    background: #cce6ff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.display {
+    background: #000;
+    color: #0f0;
+    font-family: 'Digital-7', monospace, monospace;
+    font-size: 2.2em;
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-align: right;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    user-select: none;
+    min-height: 50px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 50%;
+    padding: 15px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.orange { background: #ff8940; color: white; }
+.light-green { background: #aede87; color: #054907; }
+.yellow { background: #fff4aa; color: #5b4800; }
+.pink { background: #ffb6bb; color: #640019; }
+.purple { background: #cbb9ff; color: #2e1a7d; }
+.light-blue { background: #abe0ff; color: #003852; }
+
+#equals {
+    border-radius: 20px;
+}
+
